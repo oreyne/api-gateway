@@ -1,7 +1,7 @@
 # api-gateway
 To run the project, please follow the next instructions:
 
-1. Database is located inside "db" folder in tw files: gateways.json and peripherical.json. Database's name must be ManageGateways. But if you wish start from zero, let server creates the database.
+1. Database is located inside "db" folder with two files: gateways.json and peripherical.json. Database's name must be ManageGateways. But if you wish start from zero, start server to create the database.
 
 The Project has two folder: Server and Client folders. 
 
