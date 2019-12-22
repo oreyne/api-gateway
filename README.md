@@ -3,13 +3,13 @@ To run the project, please follow the next instructions:
 
 1. Database is located inside "db" folder with two files: gateways.json and peripherical.json. Database's name must be ManageGateways. But if you wish start from zero, start server to create the database.
 
-The Project has two folder: Server and Client folders. 
+The Project's code are in two folder: Server and Client folders. 
 
 First, go to Server folder and run following command lines:
 1. npm install
 2. npm start
 
-To manager the data, go to Client forlder and run following command lines:
+To manager the data, go to Client folder and run following command lines:
 
 1. npm install
 2. ng serve -o
