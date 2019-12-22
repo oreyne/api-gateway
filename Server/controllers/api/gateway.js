@@ -1,8 +1,6 @@
 var Gateway= require('../../models/gateway'); 
 var mongoose = require('mongoose'); 
 
-// Wrap all the methods in an object
-
 var gateway = {
     getAll: async(req,res)=>{
         try{
@@ -14,7 +12,7 @@ var gateway = {
         }
     },  
     getGatewayById: async(req,res)=>{
-         
+    
         try{
            var data=await Gateway.find({_id:req.params.id})
            res.json(data);
@@ -24,7 +22,6 @@ var gateway = {
         }
     },    
     insert:async (req,res)=>{ 
-    
         try {                   
             const gw = new Gateway({_id:req.body._id,name:req.body.name,address:req.body.address})  
             await gw.validate();                   
@@ -35,7 +32,6 @@ var gateway = {
             
             res.status(400).send(error)
         }    
-        
     },    
     delete: async(req,res)=>{
        try{     
@@ -44,7 +40,6 @@ var gateway = {
        catch(err){
         res.status(400).send(error) 
        }
-        
     }
 }
 module.exports = gateway;

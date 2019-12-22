@@ -14,7 +14,7 @@ var peripheral = {
             res.status(400).send(err) 
         }
     },  
-    getAllByIdGateway:async(req,res)=>{
+    getAllByIdGateway:async(req,res) => {
         try{
             
            var data=await Peripheral.find({gateway:req.params.id})
@@ -25,9 +25,7 @@ var peripheral = {
              res.status(400).send(err) 
          }
     },   
-    insert:async (req,res)=>{ 
-       
-      
+    insert:async (req,res) => {
         try {              
             var data=await Peripheral.find({gateway:req.body.gateway}).count(); 
              
