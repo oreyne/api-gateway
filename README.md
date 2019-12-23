@@ -36,3 +36,7 @@ To manager the data, go to "Client" folder and run following command lines:
 4. If a peripheral's UID exist, a error notification will appear.
 7. A notification about to many peripheral will appear when 10 devices exist and you wish create another more.
 8. "Remove" link was created in order to delete a specify device.
+
+**About automatic test**
+
+Three basic unit test were created to check if component are showed
