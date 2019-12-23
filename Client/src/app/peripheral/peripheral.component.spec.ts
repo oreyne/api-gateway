@@ -1,11 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { PeripheralComponent } from './peripheral.component';
 import { FormsModule } from '@angular/forms';
 import {RouterModule} from '@angular/router';
- 
 import{HttpClientTestingModule} from '@angular/common/http/testing'
 import { RouterTestingModule } from "@angular/router/testing";
+
 describe('PeripheralComponent', () => {
   let component: PeripheralComponent;
   let fixture: ComponentFixture<PeripheralComponent>;
@@ -25,5 +24,12 @@ describe('PeripheralComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have a three components in Peripheral page', () => {
+    const bannerElement: HTMLElement = fixture.nativeElement;
+    expect(bannerElement.textContent).toContain('UID');
+    expect(bannerElement.textContent).toContain('Vendor');
+    expect(bannerElement.textContent).toContain('Status');
   });
 });

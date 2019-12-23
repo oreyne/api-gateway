@@ -15,7 +15,7 @@ gateways;
   ngOnInit() {
     this.conn.getGateways().subscribe((response)=>{
       if(response){
-        console.log(response)
+        console.log(response);
         this.gateways=response;
         console.log(this.gateways)
       }
